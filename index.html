@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoDE Online Exams Guide - UCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-active {
+            @apply bg-gradient-to-r from-slate-800 to-blue-700 text-white shadow-lg;
+        }
+        .tab-inactive {
+            @apply bg-slate-100 text-slate-700 hover:bg-slate-200;
+        }
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-slate-900 via-slate-50 to-slate-100">
+    <div class="min-h-screen p-4 font-sans">
+        
+        <!-- HERO HEADER -->
+        <div class="relative overflow-hidden mb-8">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-800 via-blue-800 to-slate-800 opacity-95"></div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
+            
+            <div class="relative p-8 text-white text-center">
+                <div class="text-5xl mb-4">📱</div>
+                <h1 class="text-4xl font-black mb-2 tracking-tight">CoDE Online Exams</h1>
+                <p class="text-blue-100 text-lg font-medium">University of Cape Coast • Nyakrom Campus</p>
+                <p class="text-blue-200 text-sm mt-3 font-semibold">College of Distance Education</p>
+            </div>
+        </div>
+
+        <!-- TAB NAVIGATION -->
+        <div class="sticky top-0 z-10 mb-6 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
+            <div class="flex gap-2 overflow-x-auto pb-2">
+                <button onclick="switchTab('checklist')" class="tab-btn flex-shrink-0 px-5 py-3 rounded-xl font-bold text-sm transition-all whitespace-nowrap tab-active" data-tab="checklist">
+                    ✓ Before
+                </button>
+                <button onclick="switchTab('steps')" class="tab-btn flex-shrink-0 px-5 py-3 rounded-xl font-bold text-sm transition-all whitespace-nowrap tab-inactive" data-tab="steps">
+                    → How-To
+                </button>
+                <button onclick="switchTab('during')" class="tab-btn flex-shrink-0 px-5 py-3 rounded-xl font-bold text-sm transition-all whitespace-nowrap tab-inactive" data-tab="during">
+                    ⚠️ During
+                </button>
+                <button onclick="switchTab('support')" class="tab-btn flex-shrink-0 px-5 py-3 rounded-xl font-bold text-sm transition-all whitespace-nowrap tab-inactive" data-tab="support">
+                    📞 Help
+                </button>
+            </div>
+        </div>
+
+        <!-- CONTENT SECTIONS -->
+        <div class="space-y-5 max-w-4xl mx-auto">
+
+            <!-- CHECKLIST TAB -->
+            <div id="checklist" class="tab-content space-y-4">
+                <div class="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-green-300 p-6 rounded-2xl shadow-md">
+                    <h3 class="text-2xl font-black text-green-900 mb-5">✓ Your Exam Checklist</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">🔌</span>
+                            <p class="text-slate-800 font-medium">Device fully charged & connected to stable WiFi</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">🌐</span>
+                            <p class="text-slate-800 font-medium">Correct browser installed: Google Chrome or Safari</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">📱</span>
+                            <p class="text-slate-800 font-medium">Required app: Fully Exam Kiosk (Android) or Safe Exam Browser (iOS)</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">🕐</span>
+                            <p class="text-slate-800 font-medium">Know your exam date, time, and course code</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">🔐</span>
+                            <p class="text-slate-800 font-medium">Registration number and password ready (Firstname@2026)</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">📞</span>
+                            <p class="text-slate-800 font-medium">Save support contact details before exam starts</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-3xl">⚠️</span>
+                            <p class="text-slate-800 font-medium">Do NOT log into main LMS—use quiz materials link ONLY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-xl">
+                    <p class="text-blue-900 font-bold mb-2">💡 Pro Tip:</p>
+                    <p class="text-blue-900 text-sm">Test your setup at least 1 hour before your exam. This catches any issues before the pressure starts.</p>
+                </div>
+            </div>
+
+            <!-- STEPS TAB -->
+            <div id="steps" class="tab-content space-y-4" style="display: none;">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">1</div>
+                        <div><h4 class="font-black text-slate-800">Open Your Browser</h4><p class="text-slate-600 text-sm">Launch Google Chrome or Safari</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Visit: mycodedigicampus.com</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">2</div>
+                        <div><h4 class="font-black text-slate-800">Find Quiz Materials</h4><p class="text-slate-600 text-sm">Click the big button on homepage</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">"CLICK HERE FOR YOUR QUIZ MATERIALS!!!"</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">3</div>
+                        <div><h4 class="font-black text-slate-800">Select Your Level</h4><p class="text-slate-600 text-sm">Choose your year of study</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">L100 • L200 • L300 • L400</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">4</div>
+                        <div><h4 class="font-black text-slate-800">Pick Your Device</h4><p class="text-slate-600 text-sm">Select the right device link</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Android • iPhone/iPad • PC • Mac</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">5</div>
+                        <div><h4 class="font-black text-slate-800">Launch Secure App</h4><p class="text-slate-600 text-sm">Allow app to open automatically</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Grant any requested permissions</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">6</div>
+                        <div><h4 class="font-black text-slate-800">Login with Your Details</h4><p class="text-slate-600 text-sm">Use your credentials to access</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Username: Registration #<br>Password: Firstname@2026</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6 border-b border-slate-200">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">7</div>
+                        <div><h4 class="font-black text-slate-800">Wait for Password</h4><p class="text-slate-600 text-sm">You're almost there!</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Invigilator provides quiz password</p></div></div>
+                    </div>
+                    <div class="flex gap-5 p-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-800 text-white rounded-full flex items-center justify-center font-black text-xl flex-shrink-0">8</div>
+                        <div><h4 class="font-black text-slate-800">Enter Quiz Password</h4><p class="text-slate-600 text-sm">Start your exam</p><div class="bg-blue-50 border border-blue-200 rounded p-2 mt-2"><p class="text-blue-900 font-bold text-sm">Password will be announced by invigilator</p></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DURING TAB -->
+            <div id="during" class="tab-content space-y-4" style="display: none;">
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-400 p-6 rounded-2xl">
+                    <h3 class="text-2xl font-black text-green-900 mb-5">✅ Do This During Your Exam</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Stay focused on your device</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Read questions carefully</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Manage your time wisely</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Answer to the best of your ability</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Submit when you're finished</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-200">
+                            <span class="text-2xl">✔️</span>
+                            <p class="font-semibold text-slate-800">Remain calm if you encounter issues</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-400 p-6 rounded-2xl">
+                    <h3 class="text-2xl font-black text-red-900 mb-5">❌ Never Do This During Your Exam</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Use multiple devices</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Share passwords or quiz content</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Browse the internet</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Communicate with other students</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Take screenshots or photos</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-red-200">
+                            <span class="text-2xl">⛔</span>
+                            <p class="font-semibold text-slate-800">Leave your device unattended</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-400 p-6 rounded-2xl">
+                    <h3 class="text-lg font-black text-amber-900 mb-4">🚨 Technical Issue? Try This First</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-3 p-4 bg-white rounded-xl border border-amber-200">
+                            <span class="font-black text-amber-600 min-w-6">1</span>
+                            <p class="text-slate-800 font-medium">Take a deep breath—most issues are fixable</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-white rounded-xl border border-amber-200">
+                            <span class="font-black text-amber-600 min-w-6">2</span>
+                            <p class="text-slate-800 font-medium">Check your internet connection</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-white rounded-xl border border-amber-200">
+                            <span class="font-black text-amber-600 min-w-6">3</span>
+                            <p class="text-slate-800 font-medium">Verify you used the correct quiz materials link</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-white rounded-xl border border-amber-200">
+                            <span class="font-black text-amber-600 min-w-6">4</span>
+                            <p class="text-slate-800 font-medium">Try logging out and back in</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-white rounded-xl border border-amber-200">
+                            <span class="font-black text-amber-600 min-w-6">5</span>
+                            <p class="text-slate-800 font-medium">Confirm your browser is supported (Chrome/Safari)</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-red-50 border border-red-300 p-4 rounded-xl">
+                        <p class="text-red-900 font-bold mb-2">If nothing works: Contact support staff immediately</p>
+                        <p class="text-red-900 font-black text-sm">(Details in the Help tab)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUPPORT TAB -->
+            <div id="support" class="tab-content space-y-4" style="display: none;">
+                <div class="bg-gradient-to-r from-red-600 to-red-700 text-white p-8 rounded-2xl text-center border-4 border-red-500">
+                    <p class="text-sm font-bold text-red-100 mb-2">🚨 EXAM EMERGENCY?</p>
+                    <h3 class="text-3xl font-black mb-4">Contact Support Staff</h3>
+                    <p class="text-red-100 font-bold text-lg">Use the contact details below to reach the support team immediately</p>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-slate-200">
+                    <div class="bg-gradient-to-r from-slate-800 to-slate-700 text-white p-6">
+                        <h4 class="font-black text-xl">📞 Support Staff Directory</h4>
+                    </div>
+                    <div>
+                        <div class="p-5 border-b-2 border-slate-100 hover:bg-blue-50">
+                            <p class="font-black text-slate-800">Dr. Emmanuel Arthur-Nyarko</p>
+                            <p class="text-blue-600 font-bold text-xs mt-1">📋 Coordinator</p>
+                            <div class="flex gap-2 mt-3">
+                                <a href="tel:+233200288722" class="flex-grow bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black py-2 px-4 rounded-xl text-center text-sm">📞 0200 288 722</a>
+                                <button onclick="copyText('0200 288 722 / 0550 612 796')" class="bg-slate-200 hover:bg-slate-300 p-2 rounded-xl">📋</button>
+                            </div>
+                        </div>
+                        <div class="p-5 border-b-2 border-slate-100 hover:bg-blue-50">
+                            <p class="font-black text-slate-800">Marcel Lens</p>
+                            <p class="text-blue-600 font-bold text-xs mt-1">⚙️ Technical</p>
+                            <div class="flex gap-2 mt-3">
+                                <a href="tel:+233243263596" class="flex-grow bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black py-2 px-4 rounded-xl text-center text-sm">📞 0243 263 596</a>
+                                <button onclick="copyText('0243 263 596')" class="bg-slate-200 hover:bg-slate-300 p-2 rounded-xl">📋</button>
+                            </div>
+                        </div>
+                        <div class="p-5 border-b-2 border-slate-100 hover:bg-blue-50">
+                            <p class="font-black text-slate-800">Austin Abel Samuel Jnr.</p>
+                            <p class="text-blue-600 font-bold text-xs mt-1">⚙️ Technical</p>
+                            <div class="flex gap-2 mt-3">
+                                <a href="tel:+233508669745" class="flex-grow bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black py-2 px-4 rounded-xl text-center text-sm">📞 0508 669 745</a>
+                                <button onclick="copyText('0508 669 745')" class="bg-slate-200 hover:bg-slate-300 p-2 rounded-xl">📋</button>
+                            </div>
+                        </div>
+                        <div class="p-5 border-b-2 border-slate-100 hover:bg-blue-50">
+                            <p class="font-black text-slate-800">Favour Wegbe</p>
+                            <p class="text-blue-600 font-bold text-xs mt-1">⚙️ Technical</p>
+                            <div class="flex gap-2 mt-3">
+                                <a href="tel:+233202997831" class="flex-grow bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black py-2 px-4 rounded-xl text-center text-sm">📞 0202 997 831</a>
+                                <button onclick="copyText('0202 997 831')" class="bg-slate-200 hover:bg-slate-300 p-2 rounded-xl">📋</button>
+                            </div>
+                        </div>
+                        <div class="p-5 hover:bg-blue-50">
+                            <p class="font-black text-slate-800">Albert Gbeve</p>
+                            <p class="text-blue-600 font-bold text-xs mt-1">⚙️ Technical</p>
+                            <div class="flex gap-2 mt-3">
+                                <a href="tel:+233537045936" class="flex-grow bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black py-2 px-4 rounded-xl text-center text-sm">📞 0537 045 936</a>
+                                <button onclick="copyText('0537 045 936')" class="bg-slate-200 hover:bg-slate-300 p-2 rounded-xl">📋</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-6 rounded-2xl">
+                    <h4 class="font-black text-xl mb-4">⏰ Critical Reminders</h4>
+                    <ul class="space-y-3">
+                        <li class="font-semibold">⏰ Arrive 15 minutes early to your exam location</li>
+                        <li class="font-semibold">🔒 Keep your password private and secure</li>
+                        <li class="font-semibold">📱 Have support number saved before exam starts</li>
+                        <li class="font-semibold">⚡ Report issues IMMEDIATELY—don't wait until after</li>
+                        <li class="font-semibold">✓ Follow ALL invigilator instructions without question</li>
+                        <li class="font-semibold">🎯 Use ONLY the approved devices and applications</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-6 rounded-2xl text-center">
+                    <p class="text-3xl font-black mb-3">🌟</p>
+                    <p class="text-lg font-black mb-2">YOU'VE GOT THIS!</p>
+                    <p class="font-bold leading-relaxed">Prepare well, follow procedures, stay calm, and you'll ace your exam. We're here to support you every step of the way.</p>
+                    <p class="mt-4 text-teal-100 font-semibold">Good luck! 🎓</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="mt-10 pt-8 border-t-2 border-slate-300 text-center">
+            <p class="text-slate-700 font-bold text-sm">College of Distance Education</p>
+            <p class="text-slate-600 text-xs mt-1">University of Cape Coast • Nyakrom Campus</p>
+            <p class="text-slate-500 text-xs mt-3">For complete guidelines, contact your invigilator or support office</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            
+            // Show selected tab
+            document.getElementById(tabName).style.display = 'block';
+            
+            // Update buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-tab') === tabName) {
+                    btn.classList.remove('tab-inactive');
+                    btn.classList.add('tab-active');
+                } else {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('tab-inactive');
+                }
+            });
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied: ' + text);
+            }).catch(() => {
+                alert('Copy failed. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>
